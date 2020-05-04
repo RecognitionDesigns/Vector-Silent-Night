@@ -5,9 +5,10 @@ from anki_vector.util import degrees
 import time
 import sys
 
+#change to the number of hours your require
 hours_to_sleep = 8
 
-with anki_vector.Robot('0050169f') as robot:
+with anki_vector.Robot() as robot:
     robot.conn.release_control()
     while True:
         if robot.touch.last_sensor_reading.is_being_touched:
