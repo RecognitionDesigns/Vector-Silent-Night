@@ -16,7 +16,7 @@ with anki_vector.AsyncRobot() as robot:
             robot.behavior.say_text("Good night, I am going home")
             robot.behavior.drive_on_charger()
             time.sleep(10)
-            robot.audio.stream_wav_file("../Sounds/truck_reversing.wav", 25)
+            robot.audio.stream_wav_file("truck_reversing.wav", 25)
             robot.behavior.set_head_angle(degrees(-22.0))
 
             duration_s = (hours_to_sleep * 3600)
